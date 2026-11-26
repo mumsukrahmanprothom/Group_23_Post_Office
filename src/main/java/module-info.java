@@ -1,8 +1,10 @@
-module com.example.group_23_post_office {
+module com.postoffice {
     requires javafx.controls;
     requires javafx.fxml;
 
+    opens com.postoffice to javafx.fxml;
+    opens com.postoffice.controller to javafx.fxml;
+    opens com.postoffice.model to javafx.base;
 
-    opens com.example.group_23_post_office to javafx.fxml;
-    exports com.example.group_23_post_office;
+    exports com.postoffice;
 }
