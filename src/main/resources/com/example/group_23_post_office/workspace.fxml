@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.group_23_post_office.WorkspaceController">
+  <top><VBox spacing="5" style="-fx-background-color: #e5edf2; -fx-padding: 12;">
+    <Label text="Post Office Management System - Group 23" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label fx:id="roleLabel"/>
+  </VBox></top>
+  <left><VBox spacing="8" prefWidth="205" style="-fx-background-color: #f1f1f1; -fx-padding: 12;">
+    <Label text="Dashboard" style="-fx-font-weight: bold;"/>
+    <Button fx:id="goal1" maxWidth="Infinity" onAction="#openGoal1" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal2" maxWidth="Infinity" onAction="#openGoal2" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal3" maxWidth="Infinity" onAction="#openGoal3" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal4" maxWidth="Infinity" onAction="#openGoal4" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal5" maxWidth="Infinity" onAction="#openGoal5" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal6" maxWidth="Infinity" onAction="#openGoal6" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal7" maxWidth="Infinity" onAction="#openGoal7" alignment="CENTER_LEFT"/>
+    <Button fx:id="goal8" maxWidth="Infinity" onAction="#openGoal8" alignment="CENTER_LEFT"/>
+
+    <Region VBox.vgrow="ALWAYS"/>
+    <Button text="Logout" onAction="#logout" maxWidth="Infinity"/>
+  </VBox></left>
+  <center><ScrollPane fitToWidth="true" fitToHeight="true"><content><VBox spacing="10" style="-fx-padding: 12;">
+    <Label fx:id="titleLabel" style="-fx-font-size: 19px; -fx-font-weight: bold;"/>
+    <VBox fx:id="recordsPane" spacing="8">
+      <HBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="Category"/><ComboBox fx:id="categoryBox" prefWidth="125"/>
+        <Label text="Records"/><ComboBox fx:id="archiveBox" prefWidth="105"/>
+        <TextField fx:id="searchField" promptText="ID or keyword" HBox.hgrow="ALWAYS" onAction="#refreshRecords"/>
+        <Button text="Search / Load" onAction="#refreshRecords"/>
+      </HBox>
+      <TableView fx:id="recordTable" prefHeight="180" onMouseClicked="#selectRecord">
+        <columns>
+          <TableColumn fx:id="idColumn" text="ID" prefWidth="55"/>
+          <TableColumn fx:id="typeColumn" text="Category" prefWidth="90"/>
+          <TableColumn fx:id="summaryColumn" text="Summary" prefWidth="225"/>
+          <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+          <TableColumn fx:id="verifiedColumn" text="Verified" prefWidth="75"/>
+          <TableColumn fx:id="archivedColumn" text="Archived" prefWidth="75"/>
+          <TableColumn fx:id="dateColumn" text="Entry date" prefWidth="105"/>
+        </columns>
+      </TableView>
+      <HBox spacing="7"><Button text="Open selected" onAction="#selectRecord"/><Button fx:id="newButton" text="New record" onAction="#newRecord"/>
+        <Button fx:id="archiveButton" text="Archive" onAction="#archiveRecord"/><Button fx:id="restoreArchiveButton" text="Retrieve archive" onAction="#retrieveArchive"/></HBox>
+      <VBox fx:id="formPane" spacing="5">
+        <Label fx:id="formTitle" text="Record form" style="-fx-font-weight: bold;"/>
+        <HBox spacing="8" alignment="CENTER_LEFT"><Label text="Record ID" prefWidth="100"/><TextField fx:id="idField" prefWidth="120"/><Label text="Status"/><ComboBox fx:id="statusBox" prefWidth="150"/></HBox>
+        <HBox spacing="8" alignment="CENTER_LEFT"><Label fx:id="labelA" prefWidth="100"/><TextField fx:id="fieldA" HBox.hgrow="ALWAYS"/></HBox>
+        <HBox spacing="8" alignment="CENTER_LEFT"><Label fx:id="labelB" prefWidth="100"/><TextField fx:id="fieldB" HBox.hgrow="ALWAYS"/></HBox>
+        <HBox spacing="8" alignment="CENTER_LEFT"><Label fx:id="labelC" prefWidth="100"/><TextField fx:id="fieldC" HBox.hgrow="ALWAYS"/></HBox>
+        <HBox fx:id="rowD" spacing="8" alignment="CENTER_LEFT"><Label fx:id="labelD" prefWidth="100"/><TextField fx:id="fieldD" HBox.hgrow="ALWAYS"/></HBox>
+        <HBox fx:id="rowE" spacing="8" alignment="CENTER_LEFT"><Label fx:id="labelE" prefWidth="100"/><ComboBox fx:id="directionBox" prefWidth="160"/></HBox>
+        <HBox spacing="8"><Button fx:id="reviewButton" text="Review / Validate" onAction="#reviewRecord"/><Button fx:id="saveButton" text="Save record" onAction="#saveRecord"/><Button fx:id="verifyButton" text="Confirm verified" onAction="#verifyRecord"/></HBox>
+      </VBox>
+      <Label text="Record details / review"/>
+      <TextArea fx:id="detailsArea" editable="false" wrapText="true" prefRowCount="3"/>
+    </VBox>
+    <VBox fx:id="reportPane" spacing="10" visible="false" managed="false">
+      <HBox spacing="8" alignment="CENTER_LEFT"><Label text="Report type"/><ComboBox fx:id="reportType" prefWidth="150"/><Label text="Category"/><ComboBox fx:id="reportCategory" prefWidth="150"/></HBox>
+      <HBox spacing="8" alignment="CENTER_LEFT"><Label text="From"/><DatePicker fx:id="fromDate"/><Label text="To"/><DatePicker fx:id="toDate"/></HBox>
+      <HBox spacing="8"><Button text="Generate report" onAction="#generateReport"/><Button text="Download report" onAction="#downloadReport"/></HBox>
+      <TextArea fx:id="reportArea" editable="false" wrapText="true" prefRowCount="20"/>
+    </VBox>
+    <VBox fx:id="accessPane" spacing="10" visible="false" managed="false">
+      <Label text="Manage the Data Entry Operator account (User 5)." wrapText="true"/>
+      <HBox spacing="8" alignment="CENTER_LEFT"><TextField fx:id="accountSearch" promptText="User ID or username"/><Button text="Search account" onAction="#lookupAccount"/></HBox>
+      <TextArea fx:id="permissionArea" editable="false" prefRowCount="3" wrapText="true"/>
+      <HBox spacing="8" alignment="CENTER_LEFT"><Label text="Access level"/><ComboBox fx:id="permissionLevel" prefWidth="170"/><Label text="Status"/><ComboBox fx:id="permissionStatus" prefWidth="140"/></HBox>
+      <Button text="Save permission" onAction="#savePermission"/>
+    </VBox>
+    <VBox fx:id="backupPane" spacing="10" visible="false" managed="false">
+      <HBox spacing="8" alignment="CENTER_LEFT"><Label text="Category"/><ComboBox fx:id="backupCategory" prefWidth="140"/><Button text="Load records" onAction="#refreshBackup"/></HBox>
+      <TableView fx:id="backupTable" prefHeight="220"><columns><TableColumn fx:id="backupIdColumn" text="ID" prefWidth="70"/><TableColumn fx:id="backupTypeColumn" text="Category" prefWidth="130"/><TableColumn fx:id="backupSummaryColumn" text="Summary" prefWidth="420"/></columns></TableView>
+      <HBox spacing="8" alignment="CENTER_LEFT"><Label text="Backup scope"/><ComboBox fx:id="backupScope" prefWidth="180"/><Button text="Preview selection" onAction="#previewBackup"/></HBox>
+      <Label fx:id="backupInfo" wrapText="true"/>
+      <HBox spacing="8"><Button text="Create binary backup" onAction="#createBackup"/><Button text="Restore from backup" onAction="#restoreBackup"/></HBox>
+      <Label text="Backup history (use only your own trusted backup files)"/><TextArea fx:id="backupArea" editable="false" wrapText="true" prefRowCount="8"/>
+    </VBox>
+    <VBox fx:id="tasksPane" spacing="10" visible="false" managed="false">
+      <Label text="Today's entry tasks - save one new record per category to complete the task." wrapText="true"/>
+      <ListView fx:id="taskList" prefHeight="240"/>
+      <Button fx:id="openTaskButton" text="Open pending task" onAction="#openTask"/>
+    </VBox>
+  </VBox></content></ScrollPane></center>
+  <bottom><Label fx:id="messageLabel" wrapText="true" minHeight="44" maxWidth="Infinity" style="-fx-padding: 8; -fx-background-color: #e5edf2;"/></bottom>
+</BorderPane>

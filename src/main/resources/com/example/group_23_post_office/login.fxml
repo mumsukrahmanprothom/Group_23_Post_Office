@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.group_23_post_office.LoginController" alignment="CENTER" spacing="12">
+  <padding><Insets top="25" right="45" bottom="25" left="45"/></padding>
+  <Label text="Post Office - Group 23" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+  <Label text="User 5 / User 6 login"/>
+  <TextField fx:id="usernameField" promptText="Username" maxWidth="300"/>
+  <PasswordField fx:id="passwordField" promptText="Password" maxWidth="300" onAction="#login"/>
+  <Button text="Login" onAction="#login" defaultButton="true"/>
+  <Label fx:id="messageLabel" wrapText="true"/>
+  <Label text="Demo accounts: user5 / user6, password 1234"/>
+</VBox>
