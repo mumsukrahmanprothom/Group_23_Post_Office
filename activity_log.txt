@@ -1,0 +1,16 @@
+2026-11-24 00:44:04 | postmaster | Post Master | Logged in
+2026-11-24 00:44:56 | postmaster | Post Master | Logged in
+2026-11-24 00:45:36 | postmaster | Post Master | Logged in
+2026-11-24 00:46:51 | assistant | Assistant Post Master | Logged in
+2026-11-24 00:47:02 | assistant | Assistant Post Master | Registered a parcel
+2026-11-24 00:47:04 | assistant | Assistant Post Master | Sold stamps
+2026-11-24 00:47:05 | assistant | Assistant Post Master | Processed incoming mail
+2026-11-24 00:47:06 | assistant | Assistant Post Master | Logged out
+2026-11-24 00:47:15 | postmaster | Post Master | Logged in
+2026-11-24 00:48:27 | postmaster | Post Master | Logged in
+2026-11-24 00:48:35 | postmaster | Post Master | Logged out
+2026-11-24 01:28:43 | postmaster | Post Master | Logged in
+2026-11-24 01:29:37 | postmaster | Post Master | Logged in
+2026-11-24 01:32:24 | postmaster | Post Master | Logged in
+2026-11-26 01:19:26 | postmaster | Post Master | Logged in
+2026-11-26 01:34:47 | postmaster | Post Master | Logged in
