@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a7d4c91-ece1-43b8-b6e8-1473af009658" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulating_Operations_of_a_Post_Office.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulating_Operations_of_a_Post_Office.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid15132.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid24168.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/PostOfficeApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/SceneSwitching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/GoalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/GoalSelectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/RoleSelectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal4Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal6Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal7Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user7/User7Goal8Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal4Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal6Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal7Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/controllers/user8/User8Goal8Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/CollectReceiveMailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/CustomerComplaintsQueriesModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/DailyPostOfficeOperationsSummaryModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/DeliverMailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/IncomingLettersSortingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/OfficeOpeningClosingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/OutgoingMailDispatchModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/PackAndSealMailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/ParcelPackageProcessingModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/PostOfficeDeliveryScheduleModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/PostOfficeOpeningModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/PostalEquipmentResourcesModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/ProcessCancelPostageModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/ReceiveMailCounterModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/SortOrganizeMailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/postoffice/models/WeighAndLabelMailModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal6.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal7.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user7/user7goal8.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal6.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal7.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/postoffice/fxml/user8/user8goal8.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/PostOfficeApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/SceneSwitching.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/GoalController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/GoalSelectionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/RoleSelectionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal1Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal3Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal4Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal5Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal6Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal7Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user7/User7Goal8Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal1Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal3Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal4Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal5Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal6Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal7Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/controllers/user8/User8Goal8Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal6.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal7.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user7/user7goal8.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal6.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal7.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/fxml/user8/user8goal8.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/CollectReceiveMailModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/CustomerComplaintsQueriesModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/DailyPostOfficeOperationsSummaryModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/DeliverMailModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/IncomingLettersSortingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/OfficeOpeningClosingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/OutgoingMailDispatchModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/PackAndSealMailModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/ParcelPackageProcessingModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/PostOfficeDeliveryScheduleModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/PostOfficeOpeningModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/PostalEquipmentResourcesModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/ProcessCancelPostageModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/ReceiveMailCounterModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/SortOrganizeMailModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/postoffice/models/WeighAndLabelMailModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/evan0/OneDrive/Desktop/Simulating_Operations_of_a_Post_Office" value="3MfFJkCfKn9vIpVNLXnVIjXEZbn" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="79" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mumsukrahmanprothom/Group_23_Post_Office.git",
+    "accountId": "720255a2-6977-43a3-9650-f3b93c0d7dc5"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4628533249162623" />
+      <entry key="MS500" value="3.229754235071586" />
+      <entry key="S2" value="7.202321804999655" />
+      <entry key="S5" value="13.589707635648859" />
+      <entry key="S10" value="20.93649053415475" />
+      <entry key="S30" value="36.183071405773234" />
+      <entry key="S60" value="49.26900801555055" />
+      <entry key="M2" value="70.70694930348155" />
+      <entry key="M5" value="102.63009333278673" />
+      <entry key="M10" value="122.46486203699686" />
+      <entry key="M15" value="137.5912484424757" />
+      <entry key="M30" value="193.71423439299636" />
+      <entry key="H1" value="299.7417538095506" />
+      <entry key="H2" value="418.46330760153523" />
+      <entry key="H4" value="510.73538047119234" />
+      <entry key="D1" value="613.0603155252659" />
+      <entry key="W1" value="633.5007811564616" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.42045924300192" />
+      <entry key="MS500" value="3.2103920125270426" />
+      <entry key="S2" value="7.190930559720075" />
+      <entry key="S5" value="13.580904243210394" />
+      <entry key="S10" value="20.929658176565155" />
+      <entry key="S30" value="36.179062420153386" />
+      <entry key="S60" value="49.26622081293327" />
+      <entry key="M2" value="70.70489623942792" />
+      <entry key="M5" value="102.62887551465519" />
+      <entry key="M10" value="122.46412959349098" />
+      <entry key="M15" value="137.5906975244678" />
+      <entry key="M30" value="193.71383987613686" />
+      <entry key="H1" value="299.74142450638317" />
+      <entry key="H2" value="418.4630504890073" />
+      <entry key="H4" value="510.7352092593219" />
+      <entry key="D1" value="613.0602780106145" />
+      <entry key="W1" value="633.5007755219583" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3MfFJkCfKn9vIpVNLXnVIjXEZbn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Post office.executor": "Run",
+    "Application.Unnamed (1).executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "Maven.Simulating_Operations_of_a_Post_Office.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/evan0/OneDrive/Desktop/Simulating_Operations_of_a_Post_Office",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Post office">
+    <configuration name="Post office" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.postoffice.Main" />
+      <module name="Simulating_Operations_of_a_Post_Office" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\evan0\.m2\repository\org\openjfx\javafx-controls\21.0.2;C:\Users\evan0\.m2\repository\org\openjfx\javafx-fxml\21.0.2;C:\Users\evan0\.m2\repository\org\openjfx\javafx-graphics\21.0.2;C:\Users\evan0\.m2\repository\org\openjfx\javafx-base\21.0.2&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="Simulating_Operations_of_a_Post_Office" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Simulating_Operations_of_a_Post_Office" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Post office" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Maven.Simulating_Operations_of_a_Post_Office" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a7d4c91-ece1-43b8-b6e8-1473af009658" name="Changes" comment="" />
+      <created>1795741992210</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1795741992210</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
