@@ -1,7 +1,7 @@
 
 package com.example.group_23_post_office;
 
-public class MailRecord {
+public class MROMailRecord {
 
     private String trackingId;
     private String sender;
@@ -12,7 +12,7 @@ public class MailRecord {
     private String status;
     private String registrationDate;
 
-    public MailRecord(String trackingId, String sender, String receiver,
+    public MROMailRecord(String trackingId, String sender, String receiver,
                       String mailType, double weight, double fee,
                       String status, String registrationDate) {
 

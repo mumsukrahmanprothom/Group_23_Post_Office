@@ -36,36 +36,36 @@ public class MRODashboardController {
     private ComboBox<String> statusComboBox;
 
     @FXML
-    private TableView<MailRecord> mailTableView;
+    private TableView<MROMailRecord> mailTableView;
 
     @FXML
-    private TableColumn<MailRecord, String> trackingIdTableColumn;
+    private TableColumn<MROMailRecord, String> trackingIdTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, String> senderTableColumn;
+    private TableColumn<MROMailRecord, String> senderTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, String> receiverTableColumn;
+    private TableColumn<MROMailRecord, String> receiverTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, String> mailTypeTableColumn;
+    private TableColumn<MROMailRecord, String> mailTypeTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, Double> weightTableColumn;
+    private TableColumn<MROMailRecord, Double> weightTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, Double> feeTableColumn;
+    private TableColumn<MROMailRecord, Double> feeTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, String> statusTableColumn;
+    private TableColumn<MROMailRecord, String> statusTableColumn;
 
     @FXML
-    private TableColumn<MailRecord, String> dateTableColumn;
+    private TableColumn<MROMailRecord, String> dateTableColumn;
 
     @FXML
     private Label messageLabel;
 
-    private ObservableList<MailRecord> mailList;
+    private ObservableList<MROMailRecord> mailList;
 
     @FXML
     public void initialize() {
@@ -86,35 +86,35 @@ public class MRODashboardController {
         );
 
         trackingIdTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("trackingId")
+                new PropertyValueFactory<MROMailRecord, String>("trackingId")
         );
 
         senderTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("sender")
+                new PropertyValueFactory<MROMailRecord, String>("sender")
         );
 
         receiverTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("receiver")
+                new PropertyValueFactory<MROMailRecord, String>("receiver")
         );
 
         mailTypeTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("mailType")
+                new PropertyValueFactory<MROMailRecord, String>("mailType")
         );
 
         weightTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, Double>("weight")
+                new PropertyValueFactory<MROMailRecord, Double>("weight")
         );
 
         feeTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, Double>("fee")
+                new PropertyValueFactory<MROMailRecord, Double>("fee")
         );
 
         statusTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("status")
+                new PropertyValueFactory<MROMailRecord, String>("status")
         );
 
         dateTableColumn.setCellValueFactory(
-                new PropertyValueFactory<MailRecord, String>("registrationDate")
+                new PropertyValueFactory<MROMailRecord, String>("registrationDate")
         );
     }
 
@@ -144,7 +144,7 @@ public class MRODashboardController {
             String trackingId =
                     DataStore.getInstance().generateTrackingId();
 
-            MailRecord mail = new MailRecord(
+            MROMailRecord mail = new MROMailRecord(
                     trackingId,
                     senderTextField.getText(),
                     receiverTextField.getText(),
@@ -180,7 +180,7 @@ public class MRODashboardController {
 
         String trackingId = trackingIdTextField.getText().trim();
 
-        MailRecord foundMail =
+        MROMailRecord foundMail =
                 DataStore.getInstance().findMail(trackingId);
 
         if (foundMail == null) {
@@ -215,7 +215,7 @@ public class MRODashboardController {
 
         } else {
 
-            for (MailRecord mail : mailList) {
+            for (MROMailRecord mail : mailList) {
                 mailTableView.getItems().add(mail);
             }
         }
@@ -232,7 +232,7 @@ public class MRODashboardController {
             return;
         }
 
-        MailRecord mail =
+        MROMailRecord mail =
                 DataStore.getInstance().findMail(trackingId);
 
         if (mail != null) {
@@ -255,7 +255,7 @@ public class MRODashboardController {
 
         String trackingId = trackingIdTextField.getText().trim();
 
-        MailRecord mail =
+        MROMailRecord mail =
                 DataStore.getInstance().findMail(trackingId);
 
         if (mail != null) {
@@ -307,7 +307,7 @@ public class MRODashboardController {
 
         String trackingId = trackingIdTextField.getText().trim();
 
-        MailRecord mail =
+        MROMailRecord mail =
                 DataStore.getInstance().findMail(trackingId);
 
         if (mail != null) {
@@ -339,7 +339,7 @@ public class MRODashboardController {
         int totalMail = 0;
         double totalFee = 0;
 
-        for (MailRecord mail : mailList) {
+        for (MROMailRecord mail : mailList) {
 
             totalMail++;
             totalFee = totalFee + mail.getFee();

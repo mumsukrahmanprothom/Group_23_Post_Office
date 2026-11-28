@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class CustomerController {
 
-    private ArrayList<Customer> customerList;
+    private ArrayList<CSOCustomer> customerList;
 
     @FXML
     private TextField customerIdField;
@@ -39,7 +39,7 @@ public class CustomerController {
     @FXML
     public void saveCustomer() {
 
-        Customer customer = new Customer(
+        CSOCustomer customer = new CSOCustomer(
                 customerIdField.getText(),
                 nameField.getText(),
                 phoneField.getText(),
@@ -85,7 +85,7 @@ public class CustomerController {
 
         String customerInfo = "";
 
-        for (Customer customer : customerList) {
+        for (CSOCustomer customer : customerList) {
             customerInfo += "Customer ID: " + customer.getCustomerId() + "\n";
             customerInfo += "Name: " + customer.getName() + "\n";
             customerInfo += "Phone: " + customer.getPhoneNumber() + "\n";

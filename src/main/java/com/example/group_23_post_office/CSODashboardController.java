@@ -55,7 +55,7 @@ public class CSODashboardController {
 
             String trackingId = result.get();
 
-            MailRecord mail = DataStore.getInstance().findMail(trackingId);
+            MROMailRecord mail = DataStore.getInstance().findMail(trackingId);
 
             if (mail != null) {
 
@@ -92,7 +92,7 @@ public class CSODashboardController {
 
         if (result.isPresent()) {
 
-            MailRecord mail = DataStore.getInstance().findMail(result.get());
+            MROMailRecord mail = DataStore.getInstance().findMail(result.get());
 
             if (mail != null) {
 

@@ -1,7 +1,7 @@
 
 package com.example.group_23_post_office;
 
-public class Customer {
+public class CSOCustomer {
 
     private String customerId;
     private String name;
@@ -9,7 +9,7 @@ public class Customer {
     private String address;
     private String email;
 
-    public Customer(String customerId, String name,
+    public CSOCustomer(String customerId, String name,
                     String phoneNumber, String address, String email) {
 
         this.customerId = customerId;

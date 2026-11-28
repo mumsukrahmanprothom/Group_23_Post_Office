@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
-public class LoginController {
+public class CSOLoginController {
 
     @FXML
     private TextField usernameField;

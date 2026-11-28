@@ -9,9 +9,9 @@ public class DataStore {
 
     private static final DataStore INSTANCE = new DataStore();
 
-    private ObservableList<MailRecord> mailRecords;
+    private ObservableList<MROMailRecord> mailRecords;
 
-    private ArrayList<Customer> customerRecords;
+    private ArrayList<CSOCustomer> customerRecords;
     private ArrayList<CustomerRequest> requestRecords;
     private ArrayList<Complaint> complaintRecords;
     private ArrayList<String> feedbackRecords;
@@ -21,7 +21,7 @@ public class DataStore {
     private DataStore() {
         mailRecords = FXCollections.observableArrayList();
 
-        customerRecords = new ArrayList<Customer>();
+        customerRecords = new ArrayList<CSOCustomer>();
         requestRecords = new ArrayList<CustomerRequest>();
         complaintRecords = new ArrayList<Complaint>();
         feedbackRecords = new ArrayList<String>();
@@ -31,16 +31,16 @@ public class DataStore {
         return INSTANCE;
     }
 
-    public ObservableList<MailRecord> getMailRecords() {
+    public ObservableList<MROMailRecord> getMailRecords() {
         return mailRecords;
     }
 
-    public void addMail(MailRecord mail) {
+    public void addMail(MROMailRecord mail) {
         mailRecords.add(mail);
     }
 
-    public MailRecord findMail(String trackingId) {
-        for (MailRecord mail : mailRecords) {
+    public MROMailRecord findMail(String trackingId) {
+        for (MROMailRecord mail : mailRecords) {
             if (mail.getTrackingId().equalsIgnoreCase(trackingId)) {
                 return mail;
             }
@@ -54,11 +54,11 @@ public class DataStore {
         return trackingId;
     }
 
-    public void removeMail(MailRecord mail) {
+    public void removeMail(MROMailRecord mail) {
         mailRecords.remove(mail);
     }
 
-    public ArrayList<Customer> getCustomerRecords() {
+    public ArrayList<CSOCustomer> getCustomerRecords() {
         return customerRecords;
     }
 
