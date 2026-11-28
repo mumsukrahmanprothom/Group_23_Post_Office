@@ -1,0 +1,264 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 123731968 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3926), pid=15132, tid=18960
+#
+# JRE version:  (21.0.11+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.11+1-b1163.125, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djpackage.app-version=4171.4 --enable-native-access=ALL-UNNAMED -Djpackage.app-path=C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\junie.exe com.intellij.ml.llm.matterhorn.ej.app.cli.standalone.MainKt --acp=false
+
+Host: AMD Ryzen 7 5700U with Radeon Graphics         , 16 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.9974)
+Time: Fri Nov 27 07:21:48 2026 Bangladesh Standard Time elapsed time: 0.047848 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000202080db4a0):  JavaThread "Unknown thread" [_thread_in_vm, id=18960, stack(0x0000009914900000,0x0000009914a00000) (1024K)]
+
+Stack: [0x0000009914900000,0x0000009914a00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6ed7f9]
+V  [jvm.dll+0x8cbfcb]
+V  [jvm.dll+0x8ce76a]
+V  [jvm.dll+0x8cee43]
+V  [jvm.dll+0x28e496]
+V  [jvm.dll+0x6ea0b5]
+V  [jvm.dll+0x6ddada]
+V  [jvm.dll+0x369d2e]
+V  [jvm.dll+0x371bfb]
+V  [jvm.dll+0x3c3829]
+V  [jvm.dll+0x3c3acb]
+V  [jvm.dll+0x33d037]
+V  [jvm.dll+0x33db7b]
+V  [jvm.dll+0x8956de]
+V  [jvm.dll+0x3d0798]
+V  [jvm.dll+0x87e3f1]
+V  [jvm.dll+0x4649b1]
+V  [jvm.dll+0x466651]
+C  [jli.dll+0x52f4]
+C  [ucrtbase.dll+0x2cd30]
+C  [KERNEL32.DLL+0x2dda7]
+C  [ntdll.dll+0xc9c5c]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffecda06308, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x000002020a5e6f70 WorkerThread "GC Thread#0"                     [id=23964, stack(0x0000009914a00000,0x0000009914b00000) (1024K)]
+  0x000002020a5f6ae0 ConcurrentGCThread "G1 Main Marker"            [id=24024, stack(0x0000009914b00000,0x0000009914c00000) (1024K)]
+  0x000002020a5f90c0 WorkerThread "G1 Conc#0"                       [id=23456, stack(0x0000009914c00000,0x0000009914d00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffecd0efb37]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffecda7aeb0] Heap_lock - owner thread: 0x00000202080db4a0
+
+Heap address: 0x000000008ac00000, size: 1876 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x000000008ac00000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+ Metaspace       used 0K, committed 0K, reserved 0K
+  class space    used 0K, committed 0K, reserved 0K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+
+Card table byte_map: [0x000002021bb50000,0x000002021bf00000] _byte_map_base: 0x000002021b6fa000
+
+Marking Bits: (CMBitMap*) 0x000002020a5e7580
+ Bits: [0x000002021bf00000, 0x000002021dc50000)
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.015 Loaded shared library C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff72f970000 - 0x00007ff72f9e8000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\junie.exe
+0x00007fffc2530000 - 0x00007fffc279c000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fffc0870000 - 0x00007fffc093b000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fffbf760000 - 0x00007fffbfb69000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fffc0a00000 - 0x00007fffc0bde000 	C:\WINDOWS\System32\USER32.dll
+0x00007fffc0060000 - 0x00007fffc0087000 	C:\WINDOWS\System32\win32u.dll
+0x00007fffc2480000 - 0x00007fffc24ab000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fffbfb70000 - 0x00007fffbfc99000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fffbffb0000 - 0x00007fffc0053000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fffc0090000 - 0x00007fffc01dc000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fffc12e0000 - 0x00007fffc1a90000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007fffc24b0000 - 0x00007fffc24e1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fffc2380000 - 0x00007fffc2478000 	C:\WINDOWS\System32\shcore.dll
+0x00007fffa96d0000 - 0x00007fffa96e8000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\jli.dll
+0x00007fffa8d30000 - 0x00007fffa8d4e000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\VCRUNTIME140.dll
+0x00007fffa5490000 - 0x00007fffa5721000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9818_none_3e071914e3359bdd\COMCTL32.dll
+0x00007fffc0550000 - 0x00007fffc05f9000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fffa9310000 - 0x00007fffa931c000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\vcruntime140_1.dll
+0x00007fff745a0000 - 0x00007fff74629000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\msvcp140.dll
+0x00007ffeccda0000 - 0x00007ffecdb6e000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\server\jvm.dll
+0x00007fffc2250000 - 0x00007fffc230c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fffc04a0000 - 0x00007fffc0548000 	C:\WINDOWS\System32\sechost.dll
+0x00007fffc0cd0000 - 0x00007fffc0de8000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fffc0df0000 - 0x00007fffc0e70000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fffbf520000 - 0x00007fffbf57e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007fffb80e0000 - 0x00007fffb80eb000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fffb80a0000 - 0x00007fffb80d6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fffbf500000 - 0x00007fffbf515000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007fffbe370000 - 0x00007fffbe38b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fffa84b0000 - 0x00007fffa84ba000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\jimage.dll
+0x00007fffb3ee0000 - 0x00007fffb412c000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fffc0e80000 - 0x00007fffc1225000 	C:\WINDOWS\System32\combase.dll
+0x00007fffc0bf0000 - 0x00007fffc0cca000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007fffa2f50000 - 0x00007fffa2f8b000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fffbfe30000 - 0x00007fffbfedc000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fffa8480000 - 0x00007fffa84a1000 	C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\java.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie;C:\WINDOWS\SYSTEM32;C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9818_none_3e071914e3359bdd;C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\runtime\bin\server
+
+VM Arguments:
+jvm_args: -Djpackage.app-version=4171.4 --enable-native-access=ALL-UNNAMED -Djpackage.app-path=C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\junie.exe 
+java_command: com.intellij.ml.llm.matterhorn.ej.app.cli.standalone.MainKt --acp=false
+java_class_path (initial): C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\app\junie-release-4171.4-windows-amd64.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 123731968                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1967128576                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7602480                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122027880                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122027880                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1967128576                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+JAVA_HOME=C:\Users\hp\.jdks\temurin-21.0.13.1
+PATH=C:\Users\hp\.jdks\temurin-21.0.13.1\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;E:\Os\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Xampp\Xampp Pack\php;D:\Composer;C:\Program Files\nodejs\;D:\cursor\resources\app\bin;C:\Users\hp\AppData\Local\hermes\bin;C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64;C:\Users\hp\AppData\Local\Python\pythoncore-3.14-64\Scripts;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\GitHubDesktop\bin;C:\Users\hp\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts;C:\Users\hp\AppData\Roaming\Composer\vendor\bin;C:\Users\hp\AppData\Local\Python\bin;D:\Downloads\cursor\resources\app\bin;D:\Antigravity IDE\bin;D:\Downloads\Antigravity IDE\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\AppData\Local\hermes\git\cmd;C:\Users\hp\AppData\Local\hermes\git\bin;C:\Users\hp\AppData\Local\hermes\git\usr\bin;C:\Users\hp\AppData\Local\Microsoft\WinGet\Packages\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\ripgrep-15.2.0-x86_64-pc-windows-msvc;C:\Users\hp\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.1-full_build\bin;C:\Users\hp\AppData\Local\Programs\Cua\cua-driver\bin;C:\Users\hp\AppData\Local\JetBrains\IntelliJIdea2026.3\acp-agents\junie\4171.4.0\junie\app
+USERNAME=hp
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
+TMP=C:\Users\hp\AppData\Local\Temp
+TEMP=C:\Users\hp\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+JNI global refs:
+JNI global refs: 0, weak refs: 0
+
+JNI global refs memory usage: 0, weak refs: 0
+
+Process memory usage:
+Resident Set Size: 14512K (0% of 7681532K total physical memory with 742808K free physical memory)
+
+OOME stack traces (most recent first):
+Classloader memory used:
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.9974)
+OS uptime: 1 days 5:16 hours
+Hyper-V role detected
+
+CPU: total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 23 model 104 stepping 1 microcode 0x8608109, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for the first 16 processors :
+  Max Mhz: 1801, Current Mhz: 1801, Mhz Limit: 1801
+
+Memory: 4k page, system-wide physical 7501M (725M free)
+TotalPageFile size 20831M (AvailPageFile size 98M)
+current process WorkingSet (physical memory assigned to process): 14M, peak: 14M
+current process commit charge ("private bytes"): 71M, peak: 188M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.11+1-b1163.125) for windows-amd64 JRE (21.0.11+1-b1163.125), built on 2026-10-26 by "builduser" with MS VC++ 17.14 (VS2022)
+
+END.
