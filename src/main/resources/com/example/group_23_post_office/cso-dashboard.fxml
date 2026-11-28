@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefWidth="1100" prefHeight="750"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group_23_post_office.CSODashboardController">
+
+    <children>
+
+        <AnchorPane prefWidth="220"
+                    style="-fx-background-color: #26364A;"
+                    AnchorPane.topAnchor="0"
+                    AnchorPane.bottomAnchor="0"
+                    AnchorPane.leftAnchor="0">
+
+            <children>
+
+                <Label layoutX="25" layoutY="30"
+                       text="POST OFFICE"
+                       style="-fx-font-size: 22px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+                <Label layoutX="25" layoutY="65"
+                       text="Customer Service Officer"
+                       style="-fx-text-fill: #D5DFEA; -fx-font-size: 12px;"/>
+
+                <Label layoutX="25" layoutY="110"
+                       text="CUSTOMER MANAGEMENT"
+                       style="-fx-text-fill: #9FB3C8; -fx-font-size: 11px;"/>
+
+                <Button layoutX="15" layoutY="140"
+                        prefWidth="190" text="Dashboard"
+                        onAction="#showDashboard"/>
+
+                <Button layoutX="15" layoutY="185"
+                        prefWidth="190" text="Customer Management"
+                        onAction="#showCustomers"/>
+
+                <Button layoutX="15" layoutY="230"
+                        prefWidth="190" text="Request Management"
+                        onAction="#openRequestManagement"/>
+
+                <Button layoutX="15" layoutY="275"
+                        prefWidth="190" text="Complaint Management"
+                        onAction="#showComplaints"/>
+
+                <Button layoutX="15" layoutY="320"
+                        prefWidth="190" text="Postal Services"
+                        onAction="#openPostalServices"/>
+
+                <Label layoutX="25" layoutY="385"
+                       text="MAIL SERVICES"
+                       style="-fx-text-fill: #9FB3C8; -fx-font-size: 11px;"/>
+
+                <Button layoutX="15" layoutY="415"
+                        prefWidth="190" text="Mail Search"
+                        onAction="#searchMail"/>
+
+                <Button layoutX="15" layoutY="460"
+                        prefWidth="190" text="Service Receipt"
+                        onAction="#generateServiceReceipt"/>
+
+                <Label layoutX="25" layoutY="525"
+                       text="FEEDBACK &amp; REPORTS"
+                       style="-fx-text-fill: #9FB3C8; -fx-font-size: 11px;"/>
+
+                <Button layoutX="15" layoutY="555"
+                        prefWidth="190" text="Customer Feedback"
+                        onAction="#customerFeedback"/>
+
+                <Button layoutX="15" layoutY="600"
+                        prefWidth="190" text="Customer Service Report"
+                        onAction="#generateCustomerReport"/>
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="contentArea"
+                    style="-fx-background-color: #F3F5F8;"
+                    AnchorPane.topAnchor="0"
+                    AnchorPane.bottomAnchor="0"
+                    AnchorPane.leftAnchor="220"
+                    AnchorPane.rightAnchor="0">
+
+            <children>
+
+                <Label layoutX="30" layoutY="35"
+                       text="Customer Service Dashboard"
+                       style="-fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: #26364A;"/>
+
+                <Label layoutX="30" layoutY="75"
+                       text="Manage customer information, requests, complaints and postal services"
+                       style="-fx-font-size: 13px; -fx-text-fill: #667788;"/>
+
+                <Label layoutX="30" layoutY="145"
+                       text="Welcome to Customer Service Officer Dashboard"
+                       style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-text-fill: #26364A;"/>
+
+                <Label layoutX="30" layoutY="190"
+                       text="Select an option from the left menu to manage customer services."
+                       style="-fx-font-size: 14px; -fx-text-fill: #667788;"/>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>
