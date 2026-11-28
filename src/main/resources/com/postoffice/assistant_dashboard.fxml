@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.postoffice.controller.AssistantDashboardController">
+    <top>
+        <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="12">
+            <Label fx:id="welcomeLabel"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE" tabMinWidth="60">
+            <Tab text="Transactions" onSelectionChanged="#handleTabChanged"><fx:include fx:id="transactionsTab" source="tab_transactions.fxml"/></Tab>
+            <Tab text="Mail &amp; Parcels" onSelectionChanged="#handleTabChanged"><fx:include fx:id="mailTab" source="tab_mail.fxml"/></Tab>
+            <Tab text="Refunds" onSelectionChanged="#handleTabChanged"><fx:include fx:id="refundsTab" source="tab_refunds.fxml"/></Tab>
+            <Tab text="Complaints" onSelectionChanged="#handleTabChanged"><fx:include fx:id="complaintsTab" source="tab_complaints.fxml"/></Tab>
+            <Tab text="Finance" onSelectionChanged="#handleTabChanged"><fx:include fx:id="financeTab" source="tab_finance.fxml"/></Tab>
+            <Tab text="Duties" onSelectionChanged="#handleTabChanged"><fx:include fx:id="dutiesTab" source="tab_duties.fxml"/></Tab>
+            <Tab text="Attendance" onSelectionChanged="#handleTabChanged"><fx:include fx:id="attendanceTab" source="tab_attendance.fxml"/></Tab>
+            <Tab text="Staff Activity" onSelectionChanged="#handleTabChanged"><fx:include fx:id="activityTab" source="tab_activity.fxml"/></Tab>
+            <Tab text="Reports"><fx:include source="tab_reports.fxml"/></Tab>
+        </TabPane>
+    </center>
+</BorderPane>
