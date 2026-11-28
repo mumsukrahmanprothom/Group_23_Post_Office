@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1100.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group_23_post_office.MRODashboardController">
+
+    <children>
+
+        <AnchorPane prefWidth="220.0"
+                    style="-fx-background-color: #26364A;"
+                    AnchorPane.topAnchor="0.0"
+                    AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0">
+
+            <children>
+                <Label layoutX="25.0" layoutY="30.0"
+                       text="POST OFFICE"
+                       style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+                <Label layoutX="25.0" layoutY="65.0"
+                       text="Mail Registration Officer"
+                       style="-fx-font-size: 12px; -fx-text-fill: #D5DFEA;"/>
+
+                <Label layoutX="25.0" layoutY="115.0"
+                       text="MAIL MANAGEMENT"
+                       style="-fx-text-fill: #9FB3C8; -fx-font-size: 11px;"/>
+
+                <Button layoutX="15.0" layoutY="150.0"
+                        prefWidth="190.0" text="Register Mail"
+                        onAction="#registerMailButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="195.0"
+                        prefWidth="190.0" text="Search Mail"
+                        onAction="#searchMailButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="240.0"
+                        prefWidth="190.0" text="Manage Registered Mail"
+                        onAction="#showRegisteredMailButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="285.0"
+                        prefWidth="190.0" text="Update Mail Status"
+                        onAction="#updateMailStatusButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="330.0"
+                        prefWidth="190.0" text="Cancel Registration"
+                        onAction="#cancelMailRegistrationButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="375.0"
+                        prefWidth="190.0" text="Calculate Mail Fee"
+                        onAction="#calculateMailFeeButtonOnAction"/>
+
+                <Label layoutX="25.0" layoutY="445.0"
+                       text="REPORTS &amp; SERVICES"
+                       style="-fx-text-fill: #9FB3C8; -fx-font-size: 11px;"/>
+
+                <Button layoutX="15.0" layoutY="480.0"
+                        prefWidth="190.0" text="Generate Mail Receipt"
+                        onAction="#generateMailReceiptButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="525.0"
+                        prefWidth="190.0" text="Generate Mail Report"
+                        onAction="#generateMailReportButtonOnAction"/>
+
+                <Button layoutX="15.0" layoutY="570.0"
+                        prefWidth="190.0" text="Postal Services"
+                        onAction="#openPostalServices"/>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="contentArea"
+                    style="-fx-background-color: #F3F5F8;"
+                    AnchorPane.topAnchor="0.0"
+                    AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="220.0"
+                    AnchorPane.rightAnchor="0.0">
+
+            <children>
+
+                <Label layoutX="30.0" layoutY="25.0"
+                       text="Mail Registration Dashboard"
+                       style="-fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: #26364A;"/>
+
+                <Label layoutX="30.0" layoutY="62.0"
+                       text="Register, search and manage postal mail records"
+                       style="-fx-font-size: 13px; -fx-text-fill: #667788;"/>
+
+                <Label layoutX="30.0" layoutY="110.0"
+                       text="Sender Name"/>
+                <TextField fx:id="senderTextField"
+                           layoutX="30.0" layoutY="135.0"
+                           prefWidth="330.0"
+                           promptText="Enter sender name"/>
+
+                <Label layoutX="410.0" layoutY="110.0"
+                       text="Receiver Name"/>
+                <TextField fx:id="receiverTextField"
+                           layoutX="410.0" layoutY="135.0"
+                           prefWidth="330.0"
+                           promptText="Enter receiver name"/>
+
+                <Label layoutX="30.0" layoutY="190.0"
+                       text="Mail Type"/>
+                <ComboBox fx:id="mailTypeComboBox"
+                          layoutX="30.0" layoutY="215.0"
+                          prefWidth="330.0"
+                          promptText="Select mail type"/>
+
+                <Label layoutX="410.0" layoutY="190.0"
+                       text="Weight"/>
+                <TextField fx:id="weightTextField"
+                           layoutX="410.0" layoutY="215.0"
+                           prefWidth="330.0"
+                           promptText="Enter weight"/>
+
+                <Label layoutX="30.0" layoutY="270.0"
+                       text="Tracking ID"/>
+                <TextField fx:id="trackingIdTextField"
+                           layoutX="30.0" layoutY="295.0"
+                           prefWidth="330.0"
+                           promptText="Enter tracking ID"/>
+
+                <Label layoutX="410.0" layoutY="270.0"
+                       text="New Mail Status"/>
+                <ComboBox fx:id="statusComboBox"
+                          layoutX="410.0" layoutY="295.0"
+                          prefWidth="330.0"
+                          promptText="Select status"/>
+
+                <Label fx:id="messageLabel"
+                       layoutX="30.0" layoutY="340.0"
+                       prefWidth="720.0"
+                       text="Welcome to Mail Registration Dashboard"
+                       style="-fx-text-fill: #26364A; -fx-font-size: 13px;"
+                       wrapText="true"/>
+
+                <Label layoutX="30.0" layoutY="385.0"
+                       text="Registered Mail Records"
+                       style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-text-fill: #26364A;"/>
+
+                <TableView fx:id="mailTableView"
+                           layoutX="30.0" layoutY="420.0"
+                           prefWidth="780.0" prefHeight="280.0">
+
+                    <columns>
+                        <TableColumn fx:id="trackingIdTableColumn"
+                                     text="Tracking ID" prefWidth="100.0"/>
+                        <TableColumn fx:id="senderTableColumn"
+                                     text="Sender" prefWidth="100.0"/>
+                        <TableColumn fx:id="receiverTableColumn"
+                                     text="Receiver" prefWidth="100.0"/>
+                        <TableColumn fx:id="mailTypeTableColumn"
+                                     text="Mail Type" prefWidth="110.0"/>
+                        <TableColumn fx:id="weightTableColumn"
+                                     text="Weight" prefWidth="70.0"/>
+                        <TableColumn fx:id="feeTableColumn"
+                                     text="Fee" prefWidth="70.0"/>
+                        <TableColumn fx:id="statusTableColumn"
+                                     text="Status" prefWidth="100.0"/>
+                        <TableColumn fx:id="dateTableColumn"
+                                     text="Date" prefWidth="120.0"/>
+                    </columns>
+
+                </TableView>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>

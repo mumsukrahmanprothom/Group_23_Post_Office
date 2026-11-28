@@ -28,3 +28,19 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# Maven build output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Build output
+build/
+
+# macOS metadata and crash logs
+._*
+hs_err_pid*.log
